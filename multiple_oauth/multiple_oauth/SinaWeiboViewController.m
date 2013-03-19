@@ -33,6 +33,8 @@
 	// Do any additional setup after loading the view.
     NSString *str = [self valueForKey:@"key"];
     NSLog(@"sina--> %@", str);
+    
+    self.navigationItem.title = @"新浪微博";
 }
 
 - (void)didReceiveMemoryWarning

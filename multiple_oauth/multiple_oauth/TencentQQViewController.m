@@ -34,6 +34,8 @@
     
     NSString *str = [self valueForKey:@"key"];
     NSLog(@"tencent--> %@", str);
+    
+    self.navigationItem.title = @"腾讯QQ";
 }
 
 - (void)didReceiveMemoryWarning
