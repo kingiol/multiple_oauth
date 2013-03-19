@@ -26,4 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [super dealloc];
+}
+
+#pragma mark - Segue Method
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSString *identifier = segue.identifier;
+    
+    UIViewController *viewController = segue.destinationViewController;
+    
+    if ([identifier isEqualToString:@"loginBySina"]) {
+        [viewController setValue:@"sina" forKey:@"key"];
+    }else if ([identifier isEqualToString:@"loginByTencent"]) {
+        [viewController setValue:@"tencent" forKey:@"key"];
+    }
+    
+}
+
 @end
