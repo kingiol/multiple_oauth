@@ -36,7 +36,6 @@
     NSString *identifier = segue.identifier;
     
     UIViewController *viewController = segue.destinationViewController;
-    
     if ([identifier isEqualToString:@"loginBySina"]) {
         [viewController setValue:@"sina" forKey:@"key"];
     }else if ([identifier isEqualToString:@"loginByTencent"]) {
